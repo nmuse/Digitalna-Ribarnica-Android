@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.digitalnaribarnica.Fragments.ReservationFragment">
+
+    <RelativeLayout
+        android:id="@+id/middleRezervation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectionRequired="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/myReservations_button"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:clickable="false"
+                android:text="@string/myReservations"/>
+            <Button
+                android:id="@+id/reservation_history"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/reservationHistory"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:id="@+id/requests_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:textSize="10dp"
+                android:text="@string/requests"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:id="@+id/acceptedRequests_button"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/acceptedRequests"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="@string/History"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerReservations"
+            android:layout_below="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/noDataAvailableReservations"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

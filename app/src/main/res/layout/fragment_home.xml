@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digitalnaribarnica.Fragments.HomeFragment"
+    tools:ignore="VectorDrawableCompat"
+    android:background="@drawable/second_blue_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/role_buyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/blue_background">
+
+            <TextView
+                android:id="@+id/heading_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="tvLogin"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/textbuyer"
+                android:elevation="5dp"
+                android:text="@string/buyerText"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textbuyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_above="@id/heading_buyer"
+                android:elevation="5dp"
+                android:text="@string/continueAs"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_shopping1"
+                android:contentDescription="@string/image"/>
+
+            <ImageView
+                android:id="@+id/statusBuyer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_check_circle"
+                android:contentDescription="@string/image" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/role_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_background"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/heading_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:transitionName="tvLogin"
+                android:layout_alignEnd="@+id/textseller"
+                android:elevation="5dp"
+                android:text="@string/sellerText"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"/>
+
+            <TextView
+                android:id="@+id/textseller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_above="@id/heading_seller"
+                android:elevation="5dp"
+                android:text="@string/continueAs"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:textAlignment="viewEnd"/>
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_fishing"
+                android:contentDescription="@string/image"/>
+
+            <ImageView
+                android:id="@+id/statusSeller"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_check_circle"
+                android:contentDescription="@string/image"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

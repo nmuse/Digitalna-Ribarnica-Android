@@ -1,0 +1,6 @@
+include ':badges'
+include ':repository'
+include ':mailServise'
+include ':database'
+include ':app'
+rootProject.name = "Digitalna ribarnica"

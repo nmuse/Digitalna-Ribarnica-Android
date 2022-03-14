@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="VectorDrawableCompat">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/Slika"
+        />
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_below="@+id/Slika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="@string/welcome"
+        android:textColor="@color/colorBlue"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/Email"
+        android:layout_below="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="test"
+        android:textColor="@color/colorBlue"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/ID"
+        android:layout_below="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="drugi"
+        android:textColor="@color/colorBlue"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/odjava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ID"
+        android:background="@color/colorPurple"
+        android:text="Odjava"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorPurple"/>
+
+</RelativeLayout>

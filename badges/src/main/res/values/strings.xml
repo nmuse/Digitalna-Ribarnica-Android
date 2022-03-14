@@ -1,0 +1,23 @@
+<resources>
+    <string name="badge_title">Naziv značke</string>
+    <string name="badge_description">Opis značke</string>
+    <string name="newBadge">Nova značka</string>
+    <string name="newBadgeText">Čestitamo! Dobili ste novu značku!</string>
+    <string name="download">Preuzmi</string>
+    <string name="quizTitle">Kviz</string>
+    <string name="Question">Pitanje</string>
+    <string name="next">Dalje</string>
+    <string name="answer">Odgovor</string>
+    <string name="finishQuiz">Završi kviz</string>
+    <string name="questionNumber">Pitanje broj</string>
+    <string name="chooseAnswer">Odaberite odgovor</string>
+    <string name="finish">Završi</string>
+    <string name="dalje">DALJE</string>
+    <string name="zavrsi">ZAVRŠI</string>
+    <string name="correntAnswersNumberIs">Broj točnih odgovora: </string>
+    <string name="start">Započni</string>
+    <string name="welcomeQuiz">Dobrodošli u kviz!\n\nKao vjernom korisniku aplikacije Digitalna ribarnica, dana vam je mogućnost osvajanja nove značke ukoliko točno odgovorite na sva postavljena pitanja.\n\nSretno!</string>
+    <string name="finishedQuizText1">Kviz je završen. Broj točnih odgovora je </string>
+    <string name="finishedQuizText2">.\n\nNa sva pitanja ste točno odgovorili. Vi ste pravi morski ekspert!</string>
+    <string name="finishedQuizText3">.\n\nNažalost, niste točno odgovorili na sva pitanja te ne dobivate značku. Pokušajte ponovno na sljedećem kvizu.</string>
+</resources>

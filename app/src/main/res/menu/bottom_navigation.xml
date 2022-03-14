@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_ponude"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="@string/reservation_title"/>
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/offers"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/chat"/>
+    <item
+        android:id="@+id/nav_person"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/profile"/>
+
+</menu>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="VectorDrawableCompat">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeBlueBackground"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:contentDescription="@string/back"/>
+
+ <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+     android:layout_margin="20dp">
+
+
+     <ImageView
+         android:id="@+id/btnBadges"
+         android:layout_width="35dp"
+         android:clickable="true"
+         android:focusable="true"
+         android:layout_height="35dp"
+         android:src="@drawable/ic_baseline_badges"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_marginEnd="18dp"
+         android:contentDescription="@string/badge"/>
+
+    <ImageView
+        android:id="@+id/btnUrediProfil"
+        android:layout_width="35dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="35dp"
+        android:src="@drawable/edit_icon"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginEnd="18dp"
+        android:contentDescription="@string/Odjava"/>
+
+        <ImageView
+        android:id="@+id/odjava"
+        android:layout_width="34dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="34dp"
+        android:src="@drawable/logout_icon"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/urediProfil" />
+
+</LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeIcon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="130dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorWhite">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="116dp"
+                android:layout_height="116dp"
+                app:cardCornerRadius="58dp"
+                android:layout_margin="2dp"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/slikaProfila"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorWhite"
+                    android:contentDescription="@string/picture"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profil" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/cardViewImage"
+            android:id="@+id/badge_buyer"
+            android:layout_marginStart="-40dp"
+            android:contentDescription="@string/badge"
+            android:elevation="5dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/badge_buyer"
+            android:layout_marginStart="-16dp"
+            android:id="@+id/badge_seller"
+            android:contentDescription="@string/badge"
+            android:elevation="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userNameRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeIcon">
+
+        <TextView
+            android:id="@+id/ime_prezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/nameSurname"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ratingRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/userNameRelative">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:numStars="5"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:rating="0"/>
+
+        <TextView
+            android:id="@+id/show_ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/ratingBar"
+            android:text="@string/showRatings"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/colorBlue"
+            android:textSize="12sp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ratingRelative">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPodaci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/email_text_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/username"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/email_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/username"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/adresa_text_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/adresa"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adresa_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/adresa"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/broj_mobitela_text_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/telefon"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/broj_mobitela_p"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/telefon"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+<!--
+
+
+            <Button
+                android:id="@+id/btnUrediProfil"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cv"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="@string/urediProfil"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorBlue"
+                style="@style/Widget.MaterialComponents.Button"
+                tools:ignore="NotSibling"/>-->
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_round_message_24"
+        android:contentDescription="@string/add"
+        android:elevation="@dimen/general_margin"
+        android:layout_margin="25dp"
+        android:layout_alignBottom="@+id/scroll"/>
+
+</RelativeLayout>

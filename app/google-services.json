@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "168339332951",
+    "firebase_url": "https://digitalna-ribarnica-fb.firebaseio.com",
+    "project_id": "digitalna-ribarnica-fb",
+    "storage_bucket": "digitalna-ribarnica-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168339332951:android:0517213b31d1072e5d2812",
+        "android_client_info": {
+          "package_name": "com.example.digitalnaribarnica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168339332951-ppfammc3bdn6hev2ia9f3c9anq7lisj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1NpNCGIJhr9oKS8B4z3hRAC7JXsyrNYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168339332951-ppfammc3bdn6hev2ia9f3c9anq7lisj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

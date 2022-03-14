@@ -1,0 +1,23 @@
+<resources>
+    <string name="badge_title">Badge name</string>
+    <string name="badge_description">Badge description</string>
+    <string name="newBadge">New badge</string>
+    <string name="newBadgeText">Congrats! You\'ve got a new badge!</string>
+    <string name="download">Got it</string>
+    <string name="quizTitle">Quiz</string>
+    <string name="Question">Question</string>
+    <string name="next">Next</string>
+    <string name="answer">Answer</string>
+    <string name="finishQuiz">Finish Quiz</string>
+    <string name="questionNumber">Question Number </string>
+    <string name="chooseAnswer">Choose Answer</string>
+    <string name="finish">Finish</string>
+    <string name="dalje">NEXT</string>
+    <string name="zavrsi">FINISH</string>
+    <string name="correntAnswersNumberIs">Number of correct answers:</string>
+    <string name="start">Start</string>
+    <string name="welcomeQuiz">Welcome to quiz!\n\nAs a loyal user of Digital Fish Market, today you have the opportunity to win new badge if you answer all the questions correctly.\n\nGood luck!</string>
+    <string name="finishedQuizText1">Quiz is finished. The number of correct answers is</string>
+    <string name="finishedQuizText2">.\n\nYou answered all the questions correctly. You are a true marine expert!</string>
+    <string name="finishedQuizText3">.\n\nSorry, you didn\'t answer all the questions correctly and you don\'t get a badge. Please try again next time.</string>
+</resources>

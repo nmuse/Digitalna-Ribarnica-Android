@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.digitalnaribarnica.Fragments.AddOfferFragment"
+    tools:ignore="VectorDrawableCompat">
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPodaci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="5dp"
+                        android:text="@string/fishSpecies"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/auto_fish_species"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/chooseFish"
+                        android:completionThreshold="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="5dp"
+                        android:text="@string/location"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/auto_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/chooseLocation"
+                        android:completionThreshold="1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="3dp"
+                        android:elevation="5dp"
+                        android:text="@string/pricePerKg"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/price_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:inputType="numberDecimal"
+                        android:autofillHints="10.00"
+                        android:textSize="18sp"
+                        android:hint="@string/_0_00"
+                        tools:ignore="LabelFor"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:text="@string/kn"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+                </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="-10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="5dp"
+                        android:text="@string/fishClass"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_expensive"
+                        android:layout_margin="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/radio_small"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/small"/>
+
+                            <ImageView
+                                android:id="@+id/btn_minus_small"
+                                style="@style/Widget.MaterialComponents.Button"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_btn_minus"
+                                android:contentDescription="@string/minus"
+                                app:tint="@color/colorGrayBlue" />
+
+                        <EditText
+                            android:id="@+id/small_fish_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:layout_marginStart="2dp"
+                            android:autofillHints="10.00"
+                            android:textSize="18sp"
+                            android:hint="@string/_0"
+                            tools:ignore="LabelFor"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:elevation="5dp"
+                                android:text="@string/kg"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:id="@+id/btn_plus_small"
+                                style="@style/Widget.MaterialComponents.Button"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_btn_plus"
+                                android:contentDescription="@string/minus"
+                                app:tint="@color/colorGrayBlue" />
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/smallDescription"
+                            android:textColor="@color/colorGrayBlue"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <CheckBox
+                                android:id="@+id/radio_medium"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/medium"/>
+
+                            <ImageView
+                                android:id="@+id/btn_minus_medium"
+                                style="@style/Widget.MaterialComponents.Button"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_btn_minus"
+                                android:contentDescription="@string/minus"
+                                app:tint="@color/colorGrayBlue" />
+
+                            <EditText
+                                android:id="@+id/medium_fish_quantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:layout_marginStart="2dp"
+                                android:autofillHints="10.00"
+                                android:textSize="18sp"
+                                android:hint="@string/_0"
+                                tools:ignore="LabelFor"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:elevation="5dp"
+                                android:text="@string/kg"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:id="@+id/btn_plus_medium"
+                                style="@style/Widget.MaterialComponents.Button"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_btn_plus"
+                                android:contentDescription="@string/minus"
+                                app:tint="@color/colorGrayBlue" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mediumDescription"
+                            android:textColor="@color/colorGrayBlue"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <CheckBox
+                                android:id="@+id/radio_large"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/large"/>
+
+                            <ImageView
+                                android:id="@+id/btn_minus_large"
+                                style="@style/Widget.MaterialComponents.Button"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_btn_minus"
+                                android:contentDescription="@string/minus"
+                                app:tint="@color/colorGrayBlue" />
+
+                            <EditText
+                                android:id="@+id/large_fish_quantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:layout_marginStart="2dp"
+                                android:autofillHints="10.00"
+                                android:textSize="18sp"
+                                android:hint="@string/_0"
+                                tools:ignore="LabelFor"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:elevation="5dp"
+                                android:text="@string/kg"
+                                android:textSize="14sp"/>
+
+                            <ImageView
+                                android:id="@+id/btn_plus_large"
+                                style="@style/Widget.MaterialComponents.Button"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:padding="0dp"
+                                android:src="@drawable/ic_btn_plus"
+                                android:contentDescription="@string/minus"
+                                app:tint="@color/colorGrayBlue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/largeDescription"
+                            android:textColor="@color/colorGrayBlue"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:text="@string/add"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorBlue"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_marginStart="10dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

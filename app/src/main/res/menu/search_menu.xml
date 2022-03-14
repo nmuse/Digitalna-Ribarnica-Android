@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+    <item
+        android:title="@string/all_offers"
+        android:id="@+id/all_offers_menu"
+        />
+
+
+    <item
+        android:title="@string/my_offers"
+        android:id="@+id/my_offers_menu"
+        />
+
+    <item
+        android:title="@string/filter_menu"
+        android:id="@+id/filter_menu"
+        />
+        <item
+            android:title="@string/sorting"
+            android:id="@+id/sort_offers_menu"/>
+</group>
+
+    <item
+    android:id="@+id/action_search"
+    android:title="@string/search"
+    android:icon="@drawable/ic_baseline_search_24"
+    app:showAsAction="always|collapseActionView"
+    app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:id="@+id/current_language"
+        android:title="@string/currentLanguage"
+        android:iconTint="@color/colorWhite"
+        android:enabled="false"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/language"
+        android:title="@string/language"
+        android:icon="@drawable/ic_baseline_language_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/onboardingHelp"
+        android:title="@string/onboardingHelp"
+        android:icon="@drawable/ic_baseline_help_outline_24"
+        app:showAsAction="always|collapseActionView"
+        />
+
+</menu>
